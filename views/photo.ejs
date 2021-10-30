@@ -10,7 +10,7 @@
         <!-- Portfolio item 1-->
         <div class="portfolio-item">
           
-            <img class="img-fluid" src="<%= photo.image %>" alt="..." />
+            <img class="img-fluid" src="<%= photo.image %>"  />
           </a>
           <div class="portfolio-caption">
             <div class="portfolio-caption-heading"><%= photo.title %></div>
@@ -25,7 +25,14 @@
       </div>
     </div>
   </div>
+  <div  class="clearfix" style=" margin-top: 10px;">
+    <a style="margin-left: 75%;" href="/photos/edit/<%= photo._id %>" class="up-btn "><span>Update Post</span></a>
+    <a style="margin-left: 15px;" href="" class="del-btn float-left "
+      onclick="return confirm('ARE YOU SURE?')">Delete Post</a>
+  </div>
 </section>
+
+
 
 
 <!-- Footer-->
