@@ -12,7 +12,7 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="col-lg-12  mb-4">
 
         <% for (let i =0; i < photos.length; i++) { %>
         <!-- Portfolio item 1-->
@@ -20,10 +20,7 @@
           <a
             href="/photos/<%=photos[i]._id %>"
           >
-            <div class="portfolio-hover">
-            
-            </div>
-            <img class="img-fluid" src="<%= photos[i].image %>" alt="..." />
+            <img class="img-fluid" src="<%= photos[i].image %>"  />
           </a>
           <div class="portfolio-caption">
             <div class="portfolio-caption-heading"><%= photos[i].title %></div>
